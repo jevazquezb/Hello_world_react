@@ -32,10 +32,20 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 
-    1. bundle install
-    2. yarn
-    3. rails db:create
-    4. rails db:migrate
+    bundle install
+    yarn
+    rails db:create
+    rails db:migrate
+
+### Feed the database
+
+    rails c
+    Greeting.create(message: 'Hello, world!')
+    Greeting.create(message: '¡Hola mundo!')
+    Greeting.create(message: 'Bonjour le monde!')
+    Greeting.create(message: 'Hallo Welt!')
+    Greeting.create(message: 'Ciao mondo!')
+    exit
 
 ### Usage
 
